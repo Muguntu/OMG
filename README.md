@@ -1,31 +1,47 @@
+## First steps to run in Android Emulator or Device
 
-- [1] Install NodeJS
-- [2] Install Ionic
+### Install NodeJS
+
+### Install Ionic
 
 ```
-npm install -g cordova ionic
+npm install -g cordova ionic gulp bower
 ```
 
-- [3] Install Android SDK
-- [4] Add Android SDK to the PATH
-- [5] Create an Android Emulator avd
-- [6] Add the platform desired
+### Install Android SDK
+#####Add Android SDK to the PATH
+#####Create an Android Emulator avd
+
+### Add Android platform
 
 ```
 ionic platform add android
 ```
-- [7] Build Ionic project
+
+### Build an Android app
 
 ```
-ionic build android
-``` 
-- [8] Run the Ionic project on the emulator
-
-```
-ionic emulate ios
+$ ionic build android
 ```
 
-### Errors that you could find
+### Deploying on Android devices
+
+```
+ionic emulate android
+```
+
+
+## Running this project in development
+
+```
+$ sudo npm install -g cordova ionic gulp bower
+$ npm install
+$ bower install
+$ gulp
+$ ionic serve
+```
+
+## Errors that you could find
 
 ####Error: ANDROID_HOME is not set and android command not in your path You must fulfill at least one of these conditions
 
