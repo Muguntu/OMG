@@ -9,12 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Omygoodness">
-  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
 
   <title>Omygoodness</title>
 
   <!--fonts-->
-  <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'> -->
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,13 +38,20 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a>
+          <li class="active">
+            <a href="#/">Home</a>
           </li>
-          <li><a href="settings.html">Settings</a>
+          <li>
+            <a href="#/settings">Settings</a>
           </li>
-          <li><a href="about-us">About Us</a>
+          <li>
+            <a href="#/about">About Us</a>
           </li>
-          <li><a href="feedback">Feedback</a>
+          <li>
+            <a href="#/feedback">Feedback</a>
+          </li>
+          <li>
+            <a href="#/reset">Reset</a>
           </li>
         </ul>
 
@@ -58,25 +65,11 @@
   <div class="container">
 
     <div class="character">
-      <!-- <div role="alert" class="alert alert-warning alert-dismissible fade in">
-              <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
-            I´m not feeling too good :( Use the <strong>scan item</strong> button to feed me please!
-            </div>
-            <label class="file-upload">
-        <input type="file" accept="image/*;capture=camera" id="Take-Picture">
-        <span class="scan-bt">Scan Item</span>
-      </label>-->
-      <!-- fake button-->
-
-
-      <!-- Modal window showing the product detail -->
-
       <!-- Button trigger modal -->
-      <button type="button" class="file-upload btn btn-warning" data-toggle="modal" data-target="#myModal">
+      <label class="file-upload btn btn-warning">
+        <input type="file" accept="image/*;capture=camera" id="Take-Picture">
         <span class="scan-bt">Please, Feed me!</span>
-      </button>
-      <a href="#/alert">Alert</a>
-      <a href="#/">Alert</a>
+      </label>
 
       <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -86,109 +79,24 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <h4 class="modal-title" id="myModalLabel">Tesco Carrots Loose</h4>
             </div>
             <div class="modal-body">
-              <div class="powers">
-                <ul>
-                  <li>
-                    <img src="img/eye-sight.png" alt="eye-sight" />
-                    <h2>Eye Sight</h2>
-                    <h3>3</h3>
-                  </li>
-                  <li>
-                    <img src="img/heart.png" alt="eye-sight" />
-                    <h2>Heart</h2>
-                    <h3>2</h3>
-                  </li>
-                  <li>
-                    <img src="img/brain.png" alt="eye-sight" />
-                    <h2>Brain</h2>
-                    <h3>2</h3>
-                  </li>
-                </ul>
-              </div>
-
+              <!-- Gets dynamically filled -->
             </div>
-            <div class="modal-footer">
-
-              <a href="Evolution.html" class="btn btn-primary">Feed me!!</a>
-
-              <button type="button" class="btn btn-default" data-dismiss="modal">Scan other</button>
-
-            </div>
+            <div class="modal-footer"></div>
           </div>
         </div>
       </div>
-      <!-- Character - I need to add the layers here-->
-      <p>Scroll down to see your superpowers score &darr;</p>
-      <div class="monster-01">
 
-        <div class="skin"></div>
-        <div class="brain"></div>
-        <div class="strenght"></div>
-        <div class="heart01"></div>
-        <div class="eyes01"></div>
-        <div class="face"></div>
-        <div class="teeth"></div>
-        <div class="fatness"></div>
-        <div class="inmunity"></div>
+      <p>Scroll down to see your superpower scores &darr;</p>
 
-      </div>
-
+      <!-- Character -->
+      <div class="monster-01"></div>
 
     </div>
 
-    <div class="powers-home">
-      <ul>
-        <li class="eyes">
-          <img src="img/eye-sight.png" alt="eye-sight" />
-          <h2>Eye Sight</h2>
-          <h3 id="score">0</h3>
-        </li>
-        <li class="heart">
-          <img src="img/heart.png" alt="eye-sight" />
-          <h2>Heart</h2>
-          <h3 id="score">0</h3>
-        </li>
-
-        <li class="brain">
-          <img src="img/brain.png" alt="eye-sight" />
-          <h2>Brain</h2>
-          <h3 id="score">0</h3>
-        </li>
-        <li>
-          <img src="img/height.png" alt="eye-sight" />
-          <h2>Height</h2>
-          <h3 id="score">0</h3>
-        </li>
-        <li class="inmunity">
-          <img src="img/inmunity.png" alt="eye-sight" />
-          <h2>Immunity</h2>
-          <h3 id="score">0</h3>
-        </li>
-        <li class="teeth">
-          <img src="img/badteeth.png" alt="bad teeth" />
-          <h2>Bad teeth</h2>
-          <h3 id="score">0</h3>
-        </li>
-        <li class="strenght">
-          <img src="img/strenght.png" alt="eye-sight" />
-          <h2>Strenght</h2>
-          <h3 id="score">0</h3>
-        </li>
-        <li class="fatness">
-          <img src="img/fat.png" alt="eye-sight" />
-          <h2>Fat</h2>
-          <h3 id="score">0</h3>
-        </li>
-
-
-
-      </ul>
-
-
-    </div>
+    <!-- List of user's curent power scores -->
+    <div class="powers-home"></div>
 
   </div>
   <!-- /.container -->
@@ -202,14 +110,13 @@
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="js/bs/ie10-viewport-bug-workaround.js"></script>
 
-  <script src="js/grapnel.min.js"></script>
+  <script src="js/lib/grapnel.min.js"></script>
+  <script src="js/lib/underscore.min.js"></script>
+  <script src="js/lib/mustache.min.js"></script>
+  <script src="js/lib/scanner/DecoderWorker.js"></script>
+  <script src="js/lib/scanner/exif.js"></script>
+  <script src="js/lib/scanner/JOB.js"></script>
+  <script src="js/scan.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- javascript for the scan
-    <script src="js/scan/DecoderWorker.js"></script>
-    <script src="js/scan/exif.js"></script>
-    <script src="js/scan/JOB.js"></script>
-    <script src="js/scan/main.css"></script>
-    <script src="js/scan/main.js"></script>-->
   </body>
 </html>

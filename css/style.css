@@ -66,6 +66,10 @@ h1, .h1, h2, .h2, h3, .h3 {
   text-indent: -9999px;
   z-index: 1050;
 	}
+label.file-upload input[type="file"] {
+  position: fixed;
+  top: -1000px;
+  }
 .file-upload {
   bottom: 0;
   color: #fff;
@@ -74,12 +78,12 @@ h1, .h1, h2, .h2, h3, .h3 {
   padding: 0;
   text-align: center;
   vertical-align: middle;
-  width: 100%;
   background-color: transparent;
   border: none;
   font-size: 30px;
   margin-top: 40px;
   background-color: #ec971f;
+  padding: 15px;
 	}
 .file-upload a {
   color: #fff;
@@ -106,6 +110,7 @@ input[type="file"] {
   margin: 30px auto 20px;
   max-width: 401px;
   width: 80%;
+  text-align: center;
 	}
 .character img {
   margin: 0 auto;
@@ -342,11 +347,11 @@ input[type="file"] {
   top: 0px;
   z-index: 1;
 	}
-.strenght {
+.strength {
   background-image: none;
 	}
-.strenght01 {
-  background-image: url(../img/strenght01.png);
+.strength01 {
+  background-image: url(../img/strength01.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -356,8 +361,8 @@ input[type="file"] {
   top: 0px;
   z-index: 2;
 	}
-.strenght02 {
-  background-image: url(../img/strenght02.png);
+.strength02 {
+  background-image: url(../img/strength02.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -367,8 +372,8 @@ input[type="file"] {
   top: 0px;
   z-index: 2;
 	}
-.strenght03 {
-  background-image: url(../img/strenght03.png);
+.strength03 {
+  background-image: url(../img/strength03.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -461,7 +466,10 @@ input[type="file"] {
   top: 0px;
   z-index: 5;
 	}
-.face01 {} .face02 {} .face03 {} .fatness {} .fatness01 {} .fatness02 {} .fatness03 {} @media (min-width: 768px) {
+
+.face01 {} .face02 {} .face03 {} .fatness {} .fatness01 {} .fatness02 {} .fatness03 {}
+
+@media (min-width: 768px) {
   .navbar-header {
     float: none;
   	}
