@@ -1,3 +1,11 @@
+# Ionic Framework
+node_modules/
+platforms/android/
+platforms/ios/
+plugins/
+*.ipa
+console.log
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
