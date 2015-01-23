@@ -148,18 +148,22 @@ input[type="file"]{
 
 /*Modal styles*/
 
-#myModal h2{
+#myModal label{
 	
     font-size: 16px;
     line-height: 22px;
+	width:100%;
+	float:left;
    
 	
 	}
-#myModal h3{
+#myModal input{
 	
     font-size: 24px;
     line-height: 26px;
 	color:#57b999;
+	width:100%;
+	float:left;
    
 	
 	}
@@ -266,7 +270,44 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 	float: left;
     list-style: outside none none;
     margin-right: 5px;
-    width: 100px;
+    width: 150px;
+	min-height:80px;
+	
+	
+	}
+.powers-home li{
+	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+
+  /* Netscape */
+  -moz-opacity: 0.5;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+
+  /* Good browsers */
+  opacity: 0.5;
+	
+	
+	}
+.powers-home li #active{
+	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=100);
+
+  /* Netscape */
+  -moz-opacity: 1;
+
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+
+  /* Good browsers */
+  opacity: 1;
 	
 	
 	}
@@ -276,14 +317,19 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
     width: 40px;
 	
 	}
-.powers-home li h2{
+.powers-home li label{
 	font-size:12px;
 	text-align:center;
+	width:100%;
+	float:left;
 	
 	}
-.powers-home li h3{
+.powers-home li input{
 	font-size:12px;
 	text-align:center;
+	width:100%;
+	float:left;
+	border:none;
 	
 	}
 	
