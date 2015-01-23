@@ -1,10 +1,13 @@
 # Ionic Framework
 node_modules/
+bower_components/
 platforms/android/
 platforms/ios/
 plugins/
 *.ipa
 console.log
+www/css/ionic.app.css
+www/css/ionic.app.min.css
 
 # Windows image file caches
 Thumbs.db
