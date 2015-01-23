@@ -83,22 +83,20 @@ box-shadow:         0px 5px 13px 0px rgba(50, 50, 50, 0.2);
 	}
 
 .file-upload{
-    background-image: url("../img/scan.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+    
     bottom: 0;
     color: #fff;
     cursor: pointer;
-    height:100px;
-    margin: 0px 0 0;
 	margin-bottom:10px;
     padding: 0;
     text-align: center;
-    text-indent: -9999px;
     vertical-align: middle;
     width: 100%;
 	background-color:transparent;
 	border:none;
+	font-size:30px;
+	margin-top:40px;
+	background-color:#ec971f;
 	
 	}
 .file-upload a{
@@ -116,6 +114,9 @@ input[type="file"]{
 	background-color:#fff;
 	border:none;
 	color:#000;
+	position:relative;
+	z-index:1000000;
+	top:300px;
 	
 	}
 .close{
@@ -127,7 +128,7 @@ input[type="file"]{
 	
 	}
 .character{
-	margin: 80px auto 20px;
+	margin: 30px auto 20px;
     max-width: 401px;
     width: 80%;
 	
@@ -148,22 +149,18 @@ input[type="file"]{
 
 /*Modal styles*/
 
-#myModal label{
+#myModal h2{
 	
     font-size: 16px;
     line-height: 22px;
-	width:100%;
-	float:left;
    
 	
 	}
-#myModal input{
+#myModal h3{
 	
     font-size: 24px;
     line-height: 26px;
 	color:#57b999;
-	width:100%;
-	float:left;
    
 	
 	}
@@ -266,18 +263,14 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 	
 	
 	}
+
 .powers-home li{
 	float: left;
     list-style: outside none none;
     margin-right: 5px;
-    width: 150px;
-	min-height:80px;
-	
-	
-	}
-.powers-home li{
+    width: 100px;
 	 /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 
   /* IE 5-7 */
   filter: alpha(opacity=50);
@@ -293,7 +286,11 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 	
 	
 	}
-.powers-home li #active{
+#active{
+	float: left;
+    list-style: outside none none;
+    margin-right: 5px;
+    width: 100px;
 	 /* IE 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 
@@ -317,19 +314,14 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
     width: 40px;
 	
 	}
-.powers-home li label{
+.powers-home li h2{
 	font-size:12px;
 	text-align:center;
-	width:100%;
-	float:left;
 	
 	}
-.powers-home li input{
+.powers-home li h3{
 	font-size:12px;
 	text-align:center;
-	width:100%;
-	float:left;
-	border:none;
 	
 	}
 	
@@ -340,12 +332,12 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:contain;
-	width:670px;
+	width:100%;
 	height:443px;
-	position: absolute;
-	top:300px;
+	position: relative;
+	top:150px;
 	z-index:3;
-	left:15%;
+	left:0px;
 	
 	}
 .skin{
