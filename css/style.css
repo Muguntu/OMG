@@ -137,7 +137,7 @@ input[type="file"] {
 	color: #57b999;
     font-size: 34px;
     line-height: 34px;
-    margin-top: -20px;
+    margin-top: 10px;
     text-align: left;
 	margin-bottom:20px;
 	}
@@ -666,20 +666,24 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 	}
 	#myModal .btn-primary {
  
-  font-size: 30px;
-  text-align: center;
-  padding-right: 40px;
-  background-color: #57b999;
-	border:2px solid #000;
-	}
-#myModal .btn-default {
- 
-  font-size: 30px;
-  line-height: 50px;
-  margin-top: 10px;
-  text-align: center;
-  background-color: #CCC;
-  border:2px solid #000;
-	}
+	  font-size: 30px;
+	  text-align: center;
+	  padding-right: 40px;
+	  background-color: #57b999;
+		border:2px solid #000;
+		}
+	#myModal .btn-default {
+	 
+	  font-size: 30px;
+	  line-height: 50px;
+	  margin-top: 10px;
+	  text-align: center;
+	  background-color: #CCC;
+	  border:2px solid #000;
+		}
+	.powers li{
+		min-height:160px;
+			
+			}
 	
 	}
