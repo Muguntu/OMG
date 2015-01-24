@@ -249,253 +249,410 @@ input[type="file"] {
 
   opacity: 1;
 	}
-.powers-home li img {
-  margin-left: 25%;
-  text-align: center;
-  width: 40px;
+.powers-home{
+	background-color: #fff;*/
+    left: 0;
+    margin: 400px 0px;
+    padding: 10px 0 0;
+    position: absolute;
+    width: 100%;
+	z-index:10;
+	-webkit-box-shadow: 0px -3px 7px 0px rgba(50, 50, 50,0.8);
+-moz-box-shadow:    0px -3px 7px 0px rgba(50, 50, 50, 0.8);
+box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
+	
+	
 	}
-.powers-home li h2 {
-  font-size: 12px;
-  text-align: center;
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+	margin:0px;
+	
 	}
-.powers-home li h3 {
-  font-size: 12px;
-  text-align: center;
+.powers-home ul{
+	width:100%;
+	float:left;
+	
+	
 	}
+.powers-home li{
+	float: left;
+    list-style: outside none none;
+    margin-right: 5px;
+    width: 100px;
+	
+	
+	}
+.powers-home li img{
+	margin-left: 25%;
+    text-align: center;
+    width: 40px;
+	
+	}
+.powers-home li h2{
+	font-size:12px;
+	text-align:center;
+	
+	}
+.powers-home li h3{
+	font-size:12px;
+	text-align:center;
+	
+	}
+	
 /*Superpowers score*/
 
-.monster-01 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100%;
-  height: 443px;
-  position: relative;
-  top: 150px;
-  z-index: 3;
-  left: 0px;
+.monster-01{
+	
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:170px;
+	z-index:3;
+	left:0px;
+	
 	}
-.skin0 {
-  background-image: none;
+.skin0{
+	background-image:none;
+	
+	
 	}
-.skin01 {
-  background-image: url(../img/skin01.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 0;
+.skin01{
+	background-image: url(../img/skin01.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:0;
+	
 	}
-.skin02 {
-  background-image: url(../img/skin02.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 0;
+.skin02{
+	background-image: url(../img/skin02.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:0;
+	
 	}
-.skin03 {
-  background-image: url(../img/skin03.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 0;
+.skin03{
+	background-image: url(../img/skin03.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:0;
+	
 	}
-.brain0 {
-  background-image: none;
+.brain0{
+	background-image:none;
+	
 	}
-.brain01 {
-  background-image: url(../img/brain01.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 1;
+.brain01{
+	background-image: url(../img/brain01.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:1;
+	
 	}
-.brain02 {
-  background-image: url(../img/brain02.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 1;
+.brain02{
+	background-image: url(../img/brain02.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:1;
+	
 	}
-.brain03 {
-  background-image: url(../img/brain03.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 1;
+.brain03{
+	background-image: url(../img/brain03.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:1;
+	
 	}
-.strength0 {
-  background-image: none;
+.strenght0{
+	background-image:none;
+	
 	}
-.strength01 {
-  background-image: url(../img/strength01.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 2;
+.strenght01{
+	background-image: url(../img/strenght01.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:2;
+	
 	}
-.strength02 {
-  background-image: url(../img/strength02.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 2;
+.strenght02{
+	background-image: url(../img/strenght02.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:2;
+	
 	}
-.strength03 {
-  background-image: url(../img/strength03.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 2;
+.strenght03{
+	background-image: url(../img/strenght03.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:2;
+	
 	}
-.heart0 {
-  background-image: none;
+.heart0{
+	background-image:none;
+	
 	}
-.heart01 {
-  background-image: url(../img/heart01.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 4;
+.heart01{
+	background-image: url(../img/heart01.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:4;
+	
 	}
-.heart02 {
-  background-image: url(../img/heart02.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 4;
+.heart02{
+	background-image: url(../img/heart02.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:4;
+	
 	}
-.heart03 {
-  background-image: url(../img/heart03.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 4;
+.heart03{
+	background-image: url(../img/heart03.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:4;
+	
 	}
-.eyes0 {
-  background-image: none;
+.eyes0{
+	background-image: url(../img/eyes01.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:5;
+	
 	}
-.eyes01 {
-  background-image: url(../img/eyes01.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 5;
+.eyes01{
+	background-image: url(../img/eyes01.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:5;
+	
 	}
-.eyes02 {
-  background-image: url(../img/eyes02.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 5;
+.eyes02{
+	background-image: url(../img/eyes02.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:5;
+	
 	}
-.eyes03 {
-  background-image: url(../img/eyes03.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 5;
+.eyes03{
+	background-image: url(../img/eyes03.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:5;
+	
 	}
-.face0 {
-  background-image: url(../img/face.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 670px;
-  height: 443px;
-  position: absolute;
-  top: 0px;
-  z-index: 5;
+.face0{
+	background-image: url(../img/face.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:0px;
+	z-index:5;
+	
+	}
+.face01{
+	
+	}
+.face02{
+	
+	}
+.face03{
+	
+	}
+.fatness{
+	
+	}
+.fatness01{
+	
+	}
+.fatness02{
+	
+	}
+.fatness03{
+	
+	}	
+         
+        
+@media (min-width: 768px)
+{
+    .navbar-header
+    {
+        float: none;
+    }
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
+	.container{
+		width:100%;
+		margin:0px;
+		padding:0px;
+		
+		}
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+		margin:0px;
+		
+		}
+
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+	.monster-01{
+	
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:200px;
+	z-index:3;
+	left:0px;
+	
+	}
+	.powers-home{
+		margin-top:200px;
+		
+		}
+	.file-upload{
+		font-size:24px;
+		
+		}
+		.monster-01{
+	
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:120px;
+	z-index:3;
+	left:0px;
+	
+	}
+	.powers-home{
+		margin-top:400px;
+		
+		}
+	.file-upload{
+		font-size:24px;
+		
+		}
+	
 	}
 
-.face01 {} .face02 {} .face03 {} .fatness {} .fatness01 {} .fatness02 {} .fatness03 {}
-
-@media (min-width: 768px) {
-  .navbar-header {
-    float: none;
-  	}
-  .navbar-toggle {
-    display: block;
-  	}
-  .navbar-collapse.collapse {
-    display: none !important;
-  	}
-  .container {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-  	}
-  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin: 0px;
-  	}
-  .monster-01 {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 670px;
-    height: 443px;
-    position: absolute;
-    top: 300px;
-    z-index: 3;
-    left: 0px;
-  	}
+@media (max-width: 768px){
+	.monster-01{
+	
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:100%;
+	height:443px;
+	position: absolute;
+	top:90px;
+	z-index:3;
+	left:0px;
+	
+	}
+	.powers-home{
+		margin-top:300px;
+		
+		}
+	.file-upload{
+		font-size:24px;
+		
+		}
+	
 	}
