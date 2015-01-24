@@ -275,7 +275,7 @@ input[type="file"] {
   z-index: 3;
   left: 0px;
 	}
-.skin {
+.skin0 {
   background-image: none;
 	}
 .skin01 {
@@ -311,7 +311,7 @@ input[type="file"] {
   top: 0px;
   z-index: 0;
 	}
-.brain {
+.brain0 {
   background-image: none;
 	}
 .brain01 {
@@ -347,7 +347,7 @@ input[type="file"] {
   top: 0px;
   z-index: 1;
 	}
-.strength {
+.strength0 {
   background-image: none;
 	}
 .strength01 {
@@ -383,7 +383,7 @@ input[type="file"] {
   top: 0px;
   z-index: 2;
 	}
-.heart {
+.heart0 {
   background-image: none;
 	}
 .heart01 {
@@ -419,7 +419,7 @@ input[type="file"] {
   top: 0px;
   z-index: 4;
 	}
-.eyes {
+.eyes0 {
   background-image: none;
 	}
 .eyes01 {
@@ -455,7 +455,7 @@ input[type="file"] {
   top: 0px;
   z-index: 5;
 	}
-.face {
+.face0 {
   background-image: url(../img/face.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -496,6 +496,6 @@ input[type="file"] {
     position: absolute;
     top: 300px;
     z-index: 3;
-    left: 5%;
+    left: 0px;
   	}
 	}
