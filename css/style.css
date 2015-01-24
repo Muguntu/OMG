@@ -134,36 +134,34 @@ input[type="file"] {
   color: #57b999;
 	}
 #myModal h4 {
-  font-size: 28px;
-  line-height: 30px;
-  color: #57b999;
+	color: #57b999;
+    font-size: 34px;
+    line-height: 34px;
+    margin-top: -20px;
+    text-align: left;
+	margin-bottom:20px;
 	}
 #negative {
   color: #E63339;
 	}
 #myModal .btn {
   width: 100%;
-  background-color: transparent;
   border: none;
   height: 65px;
 	}
 #myModal .btn-primary {
-  background-image: url(../img/yes.png);
-  background-repeat: no-repeat;
-  background-position: right;
+ 
   font-size: 30px;
-  text-align: right;
+  text-align: center;
   padding-right: 40px;
 	}
 #myModal .btn-default {
-  background-image: url("../img/no.png");
-  background-position: left center;
-  background-repeat: no-repeat;
+ 
   font-size: 30px;
-  line-height: 18px;
+  line-height: 50px;
   margin-top: 10px;
-  padding-left: 23px;
-  text-align: left;
+  text-align: center;
+  background-color: #CCC;
 	}
 .modal-header {
   border: none;
