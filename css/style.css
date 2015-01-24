@@ -173,6 +173,7 @@ border:2px solid #000;
   border: none;
   max-width: 330px;
   margin: 0 auto;
+  text-align:center;
 	}
 .powers {	} .powers ul {
   list-style: none;
