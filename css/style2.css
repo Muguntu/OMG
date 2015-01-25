@@ -4,14 +4,16 @@
 body {
   
   font-family: 'Gloria Hallelujah', cursive;
-   background: #88dfd3; /* Old browsers */
-background: -moz-linear-gradient(top,  #88dfd3 1%, #c1eee7 44%, #8ee5b2 55%, #217423 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#88dfd3), color-stop(44%,#c1eee7), color-stop(55%,#8ee5b2), color-stop(100%,#217423)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #88dfd3 1%,#c1eee7 44%,#8ee5b2 55%,#217423 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #88dfd3 1%,#c1eee7 44%,#8ee5b2 55%,#217423 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #88dfd3 1%,#c1eee7 44%,#8ee5b2 55%,#217423 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #88dfd3 1%,#c1eee7 44%,#8ee5b2 55%,#217423 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88dfd3', endColorstr='#217423',GradientType=0 ); /* IE6-9 */
+  background: #bfebe8; /* Old browsers */
+background: -moz-linear-gradient(top,  #bfebe8 55%, #0c8376 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(55%,#bfebe8), color-stop(100%,#0c8376)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #bfebe8 55%,#0c8376 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #bfebe8 55%,#0c8376 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #bfebe8 55%,#0c8376 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #bfebe8 55%,#0c8376 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfebe8', endColorstr='#0c8376',GradientType=0 ); /* IE6-9 */
+
+
 min-height:800px;
 
 
@@ -84,10 +86,8 @@ h1, .h1, h2, .h2, h3, .h3 {
   left:10px;
 	}
 	
-.modal-content{
-	padding-bottom:20px;
-		
-		}	
+	
+	
 label.file-upload input[type="file"] {
   position: fixed;
   top: -1000px;
@@ -148,7 +148,7 @@ body {
 
 #button_final {
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 60px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -236,16 +236,16 @@ input[type="file"] {
 	}
 /*Modal styles*/
 
-#myModal h2, #myModal2 h2 {
+#myModal h2 {
   font-size: 16px;
   line-height: 22px;
 	}
-#myModal h3, #myModal2 h3 {
+#myModal h3 {
   font-size: 24px;
   line-height: 26px;
   color: #000;
 	}
-#myModal h4, #myModal2 h4 {
+#myModal h4 {
 	color: #57b999;
     font-size: 34px;
     line-height: 34px;
@@ -256,12 +256,12 @@ input[type="file"] {
 #negative {
   color: #E63339;
 	}
-#myModal .btn, #myModal2 .btn {
+#myModal .btn {
   width: 100%;
   border: none;
   height: 65px;
 	}
-#myModal .btn-primary, #myModal2 .btn-primary {
+#myModal .btn-primary {
  
   font-size: 30px;
   text-align: center;
@@ -269,7 +269,7 @@ input[type="file"] {
   background-color: #57b999;
 border:2px solid #000;
 	}
-#myModal .btn-default, #myModal2 .btn-default {
+#myModal .btn-default {
  
   font-size: 30px;
   line-height: 50px;
@@ -376,6 +376,7 @@ border:2px solid #000;
 	-webkit-box-shadow: 0px -3px 7px 0px rgba(50, 50, 50,0.8);
 -moz-box-shadow:    0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
+min-height:300px;
 	
 	
 	}
@@ -418,15 +419,24 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 
 .monster-01{
 	
-	background-image:url(../img/trees.png);
+	background-image: url(../img/sea.png);
 background-repeat:repeat-x;
-background-position:center;
+background-position:50% 80%;
 	width:100%;
 	height:443px;
 	position: absolute;
-	top:250px;
+	
 	z-index:3;
 	left:0px;
+	
+	}
+.monster-01 img{
+	
+	
+	width:100%;
+	height:443px;
+	max-width:500px;
+	
 	
 	}
 .skin0{
@@ -843,15 +853,22 @@ background-position:center;
 		
 .monster-01{
 	
-	background-image:url(../img/trees.png);
-background-repeat:repeat-x;
-background-position:center;
+	
 	width:100%;
 	height:443px;
 	position: absolute;
 	top:250px;
 	z-index:3;
 	left:0px;
+	
+	}
+.monster-01 img{
+	
+	
+	width:100%;
+	height:443px;
+	max-width:500px;
+	
 	
 	}
 
@@ -861,9 +878,7 @@ background-position:center;
 	
 .monster-01{
 	
-	background-image:url(../img/trees.png);
-background-repeat:repeat-x;
-background-position:center;
+
 	width:100%;
 	height:443px;
 	position: absolute;
@@ -915,17 +930,26 @@ background-position:center;
 	
 	background-repeat:no-repeat;
 	background-position:center;
-	background-size:contain;
+	background-size: cover;
 	width:100%;
-	height:443px;
+	height:auto;
 	position: absolute;
-	top:120px;
+	top:200px;
 	z-index:3;
 	left:0px;
 	
 	}
+	.monster-01 img{
+	
+	
+	width:100%;
+	height:auto;
+	max-width:500px;
+	
+	
+	}
 	.powers-home{
-		margin-top:250px;
+		margin-top:230px;
 		
 		}
 	
