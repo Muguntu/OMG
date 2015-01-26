@@ -287,6 +287,9 @@ border:2px solid #000;
   margin: 0 auto;
   text-align:center;
 	}
+.scanner_log {
+  font-size: 2em;
+}
 .powers {	} .powers ul {
   list-style: none;
   width: 100%;

@@ -6,9 +6,9 @@ require 'open-uri'
 # Lynne's alogrithm with harcoded values
 get '/omg_search/:barcode' do
   content_type :json
-  domain = 'omygoodness-powerme.rhcloud.com'
   id = params[:barcode]
-  Net::HTTP.get(domain, "/omygoodness/rest/productScan/#{id}")
+  uri = "http://omygoodness-powerme.rhcloud.com/omygoodness/rest/productScan/#{id}"
+  open(uri)
 end
 
 # The Tesco API is mega shit. Slow and hardly ever even works.

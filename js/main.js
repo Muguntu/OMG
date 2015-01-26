@@ -5,23 +5,24 @@
 var user;
 var scanned_scores;
 
-// Use HTML5 local storage to persist user data between sessions
 function User() {
   self = this;
 
-  this.state = {
-    powers: {
-      // Defaults
-      eyes: { integer: 1 },
-      heart: { integer: 1 },
-      brain: { integer: 1 },
-      height: { integer: 1 },
-      immunity: { integer: 1 },
-      teeth: { integer: 1 },
-      strength: { integer: 1 },
-      fatness: { integer: 1 }
-    }
+  this.defaults = {
+    eyes: { integer: 1 },
+    heart: { integer: 1 },
+    brain: { integer: 1 },
+    height: { integer: 1 },
+    immunity: { integer: 1 },
+    teeth: { integer: 1 },
+    strength: { integer: 1 },
+    fatness: { integer: 1 },
+    skin: { integer: 1 },
+    face: { integer: 1 }
   }
+
+  this.state = {};
+  this.state.powers = this.defaults;
 
   // List of powers
   this.powers = _.map(this.state.powers, function(value, key){
@@ -30,7 +31,8 @@ function User() {
 
   // Initialise
   this.initialise = function(){
-    _.each(this.state.powers, function(value, power){
+    _.each(this.powers, function(power){
+      var value = self.state.powers[power];
       // Score needs to be a string because Mustache treats 0 as falsey
       self.state.powers[power]['score'] = value.integer.toString();
       // You go up a power level for every 7 points
@@ -39,10 +41,8 @@ function User() {
   }
 
   this.reset = function(){
-    _.each(this.state.powers, function(value, power){
-      self.state.powers[power].integer = 1;
-    });
-    self.save();
+    this.state.powers = this.defaults;
+    this.save();
   }
 
   // List of levels for interpolating with class names
@@ -76,17 +76,27 @@ function User() {
     this.load();
   }
 
-  this.load();
+  // If there's an error loading an old version of the user state
+  try {
+    this.load();
+  }
+  catch(err) {
+    this.reset();
+  }
 };
 
 // ---------
 // TEMPLATES
 // ---------
+// TODO: lazy load these templates
 var templates = [
+  'about',
   'character',
+  'feedback',
   'powers',
   'scanned',
-  'scanning'
+  'scanning',
+  'settings'
 ]
 
 // Generic function to render a template in the DOM
@@ -98,7 +108,7 @@ function render(template, context, selector, partials){
 // Fetch all the templates ready for rendering
 var loaded_count = 0;
 $.each(templates, function(index, template_name){
-  $.get('/templates/' + template_name + '.mustache', function(template) {;
+  $.get('templates/' + template_name + '.mustache', function(template) {;
     templates[template_name] = template;
     Mustache.parse(template);
     loaded_count = loaded_count + 1;
@@ -119,62 +129,88 @@ function waitForTemplates(callback) {
 // ------
 var router = new Grapnel();
 
+router.bind('navigate', function(event){
+  $('.scanner_log').html('');
+});
+
 var routes = {
   '/' : function(req, e){
     $('#myModal').modal('hide');
   },
+
+  '/settings' : function(req, e){
+    $('#myModal').modal('show');
+    render('settings', {}, '.modal-body');
+  },
+
+  '/about' : function(req, e){
+    $('#myModal').modal('show');
+    render('about', {}, '.modal-body');
+  },
+
+  '/feedback' : function(req, e){
+    $('#myModal').modal('show');
+    render('feedback', {}, '.modal-body');
+  },
+
   '/barcode/:id' : function(req, e){
     var scanned_scores = {};
     $('#myModal').modal('show');
-    $('.modal-body').html('Looking up product...');
-    // $.get(
-    //   "http://localhost:9292/omg_search/5000347033889",
-    //   function(response) {
-    //     console.log(response);
-    //     if(response == 'notfound'){
-    //       $('.scanner_log').html("Couldn't find anything matching that barcode");
-    //     }else{
-    //       json = JSON.parse(response);
-    //       console.log(json);
-    //       render('scanned', scanned_scores, '.modal-body');
-    //     }
-    //   }
-    // ).done(function() {
-    //   // alert( "second success" );
-    // })
-    // .fail(function(e, o, m) {
-    //   console.log(m);
-    // });
-    max = 5;
-    min = -5;
-    user.state.scanned_scores = {
-      eyes: Math.floor(Math.random() * (max - min) + min),
-      heart: Math.floor(Math.random() * (max - min) + min),
-      brain: Math.floor(Math.random() * (max - min) + min),
-      height: Math.floor(Math.random() * (max - min) + min),
-      immunity: Math.floor(Math.random() * (max - min) + min),
-      teeth: Math.floor(Math.random() * (max - min) + min),
-      strength: Math.floor(Math.random() * (max - min) + min),
-      fatness: Math.floor(Math.random() * (max - min) + min)
-    }
-    user.save();
-    render('scanned', user.state.scanned_scores, '.modal-body', { powers: templates['powers'] });
+    $('.scanner_log').html('Looking up product...');
+    $.get(
+      'http://omgweb.herokuapp.com/omg_search/' + req.params.id,
+      function(response) {
+        console.log(response);
+        if(response.ProductId == 'NotFound'){
+          $('.scanner_log').html("Couldn't find anything matching that barcode :(");
+        }else{
+          // Convert the API hash for the scores to the format used locally
+          var scores = {};
+          _.each(response.Scores, function(score){
+            scores[score.SPType.toLowerCase()] = score.SPScore;
+          });
+          // Merge the old and new together
+          _.extend(response, scores);
+
+          // Save the scan to be used on other pages
+          user.state.current_scan = response;
+          user.save();
+
+          $('.scanner_log').html('');
+
+          render('scanned', user.state.current_scan, '.modal-body', { powers: templates['powers'] });
+        }
+      }
+    ).done(function(d) {
+      console.log('OMG API: done', d)
+    })
+    .fail(function(e, o, m) {
+      console.log('OMG API: fail', m);
+    });
   },
+
+  // What to do when the user decides they want to eat the nutrition from the scan
   '/evolve' : function(req, e){
     $('#myModal').modal('hide');
     user.load();
     _.each(user.powers, function(power){
-      value = user.state.scanned_scores[power];
-      user.state.powers[power].integer = user.state.powers[power].integer + value;
-      user.save();
+      // Only try to update the user's super power if the scan effected that power
+      if(user.state.current_scan.hasOwnProperty(power)){
+        value = user.state.current_scan[power];
+        user.state.powers[power].integer = user.state.powers[power].integer + parseInt(value);
+      }
     })
-    user.state.scanned_scores = {};
+    user.state.current_scan = {};
     user.save();
   },
+
+  // Clear the user's super powers
   '/reset' : function(req, e){
     user.reset();
     $('#myModal').modal('hide');
   },
+
+  // 404
   '/*' : function(req, e){
     if(!e.parent()){
       console.log("404 route not found")
