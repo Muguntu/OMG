@@ -7,8 +7,8 @@ JOB.SetImageCallback(function(result) {
     router.navigate('/barcode/' + result[0].Value);
   }else{
     if(result.length === 0) {
-      $('.scanner_log').html("Couldn't read the barcode :(");
-      console.log("Decoding barcode failed.");
+      $('.scanner_log').html("I don´t know what is this :(");
+      console.log("Oh no! Something was wrong with this barcode.");
     }
   }
 });
@@ -50,7 +50,7 @@ function scan(){
       canvas = document.getElementById("picture");
       ctx = canvas.getContext("2d");
       $('#myModal').modal('show');
-      $('.scanner_log').text('Uploading...');
+      $('.scanner_log').text('We are almost there! Uploading...');
       var files = event.target.files;
       if (files && files.length > 0) {
         file = files[0];
