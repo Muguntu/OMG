@@ -18,6 +18,12 @@ npm install -g cordova ionic gulp bower
 ionic platform add android
 ```
 
+### Add Barcode Scanner plugin
+
+```
+ionic plugin add https://github.com/wildabeast/BarcodeScanner.git
+```
+
 ### Build an Android app
 
 ```
