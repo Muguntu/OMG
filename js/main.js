@@ -213,7 +213,7 @@ var routes = {
   // 404
   '/*' : function(req, e){
     if(!e.parent()){
-      console.log("404 Opps! Something was wrong!")
+      console.log("404 Oops! Something was wrong!")
     }
   }
 }
