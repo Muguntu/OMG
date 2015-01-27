@@ -156,13 +156,13 @@ var routes = {
   '/barcode/:id' : function(req, e){
     var scanned_scores = {};
     $('#myModal').modal('show');
-    $('.scanner_log').html('Yum Yum eating bardode...');
+    $('.scanner_log').html('Yum Yum eating barcode...');
     $.get(
       'http://omgweb.herokuapp.com/omg_search/' + req.params.id,
       function(response) {
         console.log(response);
         if(response.ProductId == 'NotFound'){
-          $('.scanner_log').html("Grrr! I can´t eat this barcode :(");
+          $('.scanner_log').html("Grrr! I can't eat this barcode :(");
         }else{
           // Convert the API hash for the scores to the format used locally
           var scores = {};
