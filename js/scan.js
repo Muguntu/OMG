@@ -16,8 +16,8 @@ JOB.SetImageCallback(function(result) {
 JOB.PostOrientation = true;
 
 JOB.OrientationCallback = function(result) {
-  $('.scanner_log').html('Reading the barcode...');
-  console.log("Deciphering barcode...");
+  $('.scanner_log').html('Wait, wait I need my glasses! so many numbers...');
+  console.log("1+1 is? I´m so clever.. Deciphering barcode...");
   canvas.width = result.width;
   canvas.height = result.height;
   var data = ctx.getImageData(0,0,canvas.width,canvas.height);
