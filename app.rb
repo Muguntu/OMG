@@ -2,6 +2,9 @@ require 'sinatra'
 require 'net/http'
 require 'open-uri'
 
+get '/' do
+  send_file 'index.html'
+end
 
 # Lynne's alogrithm with harcoded values
 get '/omg_search/:barcode' do
