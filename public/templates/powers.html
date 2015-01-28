@@ -11,7 +11,7 @@
     <li class="heart">
       <img src="/img/icons/heart.png" alt="Heart" />
       <h2>Heart</h2>
-      <h3 class="score"><%= heart %></h3>
+      <h3 class="score <%= parseInt(heart) < 0 ? 'negative' : '' %>"><%= heart %></h3>
     </li>
   <% } %>
 
@@ -19,7 +19,7 @@
     <li class="brain">
       <img src="/img/icons/brain.png" alt="Brain" />
       <h2>Brain</h2>
-      <h3 class="score"><%= brain %></h3>
+      <h3 class="score <%= parseInt(brain) < 0 ? 'negative' : '' %>"><%= brain %></h3>
     </li>
   <% } %>
 
@@ -27,7 +27,7 @@
     <li>
       <img src="/img/icons/height.png" alt="Height" />
       <h2>Height</h2>
-      <h3 class="score"><%= height %></h3>
+      <h3 class="score <%= parseInt(height) < 0 ? 'negative' : '' %>"><%= height %></h3>
     </li>
   <% } %>
 
@@ -35,7 +35,7 @@
     <li class="immunity">
       <img src="/img/icons/immunity.png" alt="Immunity" />
       <h2>Immunity</h2>
-      <h3 class="score"><%= immunity %></h3>
+      <h3 class="score <%= parseInt(immunity) < 0 ? 'negative' : '' %>"><%= immunity %></h3>
     </li>
   <% } %>
 
@@ -51,7 +51,7 @@
     <li class="strength">
       <img src="/img/icons/strength.png" alt="Strength" />
       <h2>strength</h2>
-      <h3 class="score"><%= strength %></h3>
+      <h3 class="score <%= parseInt(strength) < 0 ? 'negative' : '' %>"><%= strength %></h3>
     </li>
   <% } %>
 
@@ -59,7 +59,7 @@
     <li class="fatness">
       <img src="/img/icons/fat.png" alt="Fatness" />
       <h2>Fat</h2>
-      <h3 class="score"><%= fatness %></h3>
+      <h3 class="score <%= parseInt(fatness) < 0 ? 'negative' : '' %>"><%= fatness %></h3>
     </li>
   <% } %>
 </ul>
