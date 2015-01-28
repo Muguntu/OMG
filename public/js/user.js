@@ -1,5 +1,7 @@
 // Model for a user. Persisted with HTML5 localStorage
 function User() {
+  // Don't user `this` to reference the scope of this object. Use it only to refer to the scope
+  // of closures.
   self = this;
 
   // The number of points needed to reach a new level
@@ -14,7 +16,7 @@ function User() {
     teeth: { integer: 0 },
     strength: { integer: 0 },
     fatness: { integer: 0 },
-    skin: { integer: 0 },
+    skin: { integer: 8 },
     face: { integer: 0 }
   }
 
@@ -81,19 +83,21 @@ function User() {
     self.load();
     _.each(self.powers, function(power){
       // Only try to update the user's super power if the scan effected that power
-      if(self.state.current_scan.hasOwnProperty(power)){
-        value = self.state.current_scan[power];
-        self.state.powers[power].integer = self.state.powers[power].integer + parseInt(value);
+      if(self.state.current_scan.powers && self.state.current_scan.powers.hasOwnProperty(power)){
+        var value = self.state.current_scan.powers[power];
+        if(isInt(value)){
+          self.state.powers[power].integer = self.state.powers[power].integer + value;
+        }
       }
     })
     self.state.current_scan = {};
     self.save();
   }
 
-  // If there's an error loading an old version of the user state
   try {
     self.load();
   }
+  // If there's an error loading an old version of the user state
   catch(err) {
     self.reset();
   }

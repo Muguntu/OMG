@@ -249,7 +249,7 @@ input[type="file"] {
     text-align: left;
 	margin-bottom:20px;
 	}
-#negative {
+#myModal h3.negative {
   color: #E63339;
 	}
 #myModal .btn, #myModal2 .btn {
@@ -413,6 +413,9 @@ box-shadow:         0px -3px 7px 0px rgba(50, 50, 50, 0.8);
 
 	}
 
+.product-pic {
+  max-width: 100px;
+}
 /*Superpowers score*/
 
 .monster-01{

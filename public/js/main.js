@@ -20,20 +20,10 @@ var templates = [
 ]
 
 // Generic function to render a template in the DOM
-function render(template, context, selector, partials){
-  var rendered = Mustache.render(templates[template], context, partials);
-  $(selector).html(rendered);
+function render(template_name, context, selector){
+  var html = templates[template_name](context);
+  $(selector).html(html);
 }
-
-// Fetch all the templates ready for rendering
-var loaded_count = 0;
-$.each(templates, function(index, template_name){
-  $.get('templates/' + template_name + '.mustache', function(template) {;
-    templates[template_name] = template;
-    Mustache.parse(template);
-    loaded_count = loaded_count + 1;
-  });
-});
 
 function waitForTemplates(callback) {
   if(loaded_count < templates.length) {
@@ -44,9 +34,24 @@ function waitForTemplates(callback) {
   callback();
 }
 
+function isInt(value) {
+  return !isNaN(value) && 
+         parseInt(Number(value)) == value && 
+         !isNaN(parseInt(value, 10));
+}
+
+// Fetch all the templates ready for rendering
+var loaded_count = 0;
+$.each(templates, function(index, template_name){
+  $.get('templates/' + template_name + '.html', function(template) {;
+    templates[template_name] = _.template(template);
+    loaded_count = loaded_count + 1;
+  });
+});
+
 // Hide the navbar when an item is chosen
 $('.navbar-collapse a').click(function(){
-    $(".navbar-collapse").collapse('hide');
+  $(".navbar-collapse").collapse('hide');
 });
 
 // Entry point to application
