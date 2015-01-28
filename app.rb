@@ -3,7 +3,7 @@ require 'net/http'
 require 'open-uri'
 
 get '/' do
-  send_file 'index.html'
+  send_file 'public/index.html'
 end
 
 # Lynne's alogrithm with harcoded values
