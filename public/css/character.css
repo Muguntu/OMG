@@ -1,0 +1,387 @@
+.skin0{
+  background-image:none;
+
+
+  }
+.skin01{
+  background-image: url(../img/character/skin01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:0;
+
+  }
+.skin02{
+  background-image: url(../img/character/skin02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:0;
+
+  }
+.skin03{
+  background-image: url(../img/character/skin03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:0;
+
+  }
+.brain0{
+  background-image:none;
+
+  }
+.brain01{
+  background-image: url(../img/character/brain01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:1;
+
+  }
+.brain02{
+  background-image: url(../img/character/brain02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:1;
+
+  }
+.brain03{
+  background-image: url(../img/character/brain03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:1;
+
+  }
+.strenght0{
+  background-image:none;
+
+  }
+.strenght01{
+  background-image: url(../img/character/strenght01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:2;
+
+  }
+.strenght02{
+  background-image: url(../img/character/strenght02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:2;
+
+  }
+.strenght03{
+  background-image: url(../img/character/strenght03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:2;
+
+  }
+.heart0{
+  background-image: url(../img/character/heart01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:4;
+
+  }
+.heart01{
+  background-image: url(../img/character/heart01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:4;
+
+  }
+.heart02{
+  background-image: url(../img/character/heart02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:4;
+
+  }
+.heart03{
+  background-image: url(../img/character/heart03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:4;
+
+  }
+
+.teeth0{
+  background-image: none;
+
+  }
+.teeth01{
+  background-image: url(../img/character/teeth01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:4;
+
+  }
+.teeth02{
+  background-image: url(../img/character/teeth02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:4;
+
+  }
+.teeth03{
+  background-image: url(../img/character/teeth03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:4;
+
+  }
+.eyes0{
+  background-image: url(../img/character/eyes01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.eyes01{
+  background-image: url(../img/character/eyes01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.eyes02{
+  background-image: url(../img/character/eyes02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+  margin-left:-15px;
+
+  }
+.eyes03{
+  background-image: url(../img/character/eyes03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.face0{
+  background-image: url(../img/character/face.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.face01{
+  background-image: url(../img/character/face.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+
+  }
+.face02{
+  background-image: url(../img/character/face.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.face03{
+  background-image: url(../img/character/face.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.fatness0{
+  background-image:none;
+
+  }
+.fatness01{
+  background-image: url(../img/character/fatness01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.fatness02{
+  background-image: url(../img/character/fatness02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.fatness03{
+  background-image: url(../img/character/fatness03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:5;
+
+  }
+.immunity0{
+  background-image:none;
+
+  }
+.immunity01{
+  background-image: url(../img/character/immunity01.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:7;
+
+  }
+.immunity02{
+  background-image: url(../img/character/immunity02.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:7;
+
+  }
+.immunity03{
+  background-image: url(../img/character/immunity03.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  width:100%;
+  height:443px;
+  position: absolute;
+  top:0px;
+  z-index:7;
+  }

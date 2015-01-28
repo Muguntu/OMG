@@ -774,12 +774,12 @@ background-position:center;
 	z-index:5;
 	
 	}	
-.inmunity0{
+.immunity0{
 	background-image:none;
 	
 	}
-.inmunity01{
-	background-image: url(../img/inmunity01.png);
+.immunity01{
+	background-image: url(../img/immunity01.png);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:contain;
@@ -790,8 +790,8 @@ background-position:center;
 	z-index:7;
 	
 	}
-.inmunity02{
-	background-image: url(../img/inmunity02.png);
+.immunity02{
+	background-image: url(../img/immunity02.png);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:contain;
@@ -802,8 +802,8 @@ background-position:center;
 	z-index:7;
 	
 	}
-.inmunity03{
-	background-image: url(../img/inmunity03.png);
+.immunity03{
+	background-image: url(../img/immunity03.png);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:contain;
