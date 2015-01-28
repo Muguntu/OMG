@@ -7,7 +7,8 @@ JOB.SetImageCallback(function(result) {
     router.navigate('/barcode/' + result[0].Value);
   }else{
     if(result.length === 0) {
-      $('.scanner_log').html("I don´t know what is this :(");
+      $('.scanner_log').html("I don´t know what this is :(");
+      new Audio('sounds/fail.wav').play();
       console.log("Oh no! Something was wrong with this barcode.");
     }
   }

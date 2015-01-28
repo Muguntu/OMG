@@ -7,6 +7,7 @@
 var showProduct = function(product){
   if(product.ProductId == 'NotFound'){
     $('.scanner_log').html("Grrr! I can't eat this barcode :(");
+    new Audio('sounds/fail.wav').play();
   }else{
 
     $('.scanner_log').html('');
@@ -32,6 +33,8 @@ var showProduct = function(product){
     }
 
     render('scanned', context, '.modal-body');
+
+    new Audio('sounds/Magic_Wand.mp3').play();
   }
 }
 

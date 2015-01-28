@@ -248,8 +248,9 @@ input[type="file"] {
     margin-top: 10px;
     text-align: left;
 	margin-bottom:20px;
-	}
-#myModal h3.negative {
+}
+#myModal h3.negative,
+.negative {
   color: #E63339;
 	}
 #myModal .btn, #myModal2 .btn {
