@@ -54,6 +54,13 @@ $('.navbar-collapse a').click(function(){
   $(".navbar-collapse").collapse('hide');
 });
 
+// Change the action on the manually-enter-barcode form depending on the barcode
+$(document).on('submit', '#manually_enter_barcode', function(event){
+  var barcode = $('#manually_enter_barcode input').val();
+  this.action = "/#/barcode/" + barcode;
+  return true;
+});
+
 // Entry point to application
 waitForTemplates(function(){
   user = new User();

@@ -2,8 +2,10 @@ require 'sinatra'
 require 'net/http'
 require 'open-uri'
 
-get '/' do
-  send_file 'public/index.html'
+[:get, :post].each do |method|
+  send method, '/' do
+    send_file 'public/index.html'
+  end
 end
 
 # Lynne's alogrithm with harcoded values

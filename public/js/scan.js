@@ -8,6 +8,7 @@ JOB.SetImageCallback(function(result) {
   }else{
     if(result.length === 0) {
       $('.scanner_log').html("I don´t know what this is :(");
+      $('#manually_enter_barcode').show();
       new Audio('sounds/fail.wav').play();
       console.log("Oh no! Something was wrong with this barcode.");
     }
